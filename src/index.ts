@@ -1,4 +1,4 @@
-export type { Awaitable, Promisify } from './any'
+export type { Awaitable, Exclude, Extract, NonNullable, Promisify } from './any'
 
 export type { Primitive, Builtin } from './core'
 
