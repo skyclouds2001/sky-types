@@ -1,9 +1,9 @@
-export type { Awaitable, Promisify } from './any'
+export type { Awaitable, Exclude, Extract, NonNullable, Promisify } from './any'
 
 export type { Primitive, Builtin } from './core'
 
-export type { Function } from './function'
+export type { Constructor, ConstructorParameters, Function, InstanceType, OmitThisParameter, Parameters, ReturnType, ThisParameterType } from './function'
 
-export type { Partial, Readonly, Record, Required, Writable } from './list'
+export type { Omit, Partial, Pick, Readonly, Record, Required, Writable } from './list'
 
 export type { Object } from './object'
