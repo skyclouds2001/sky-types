@@ -1,22 +1,44 @@
 {
   "name": "@sky-fly/sky-types",
   "version": "0.0.0",
+  "license": "MIT",
   "description": "A useful typescript type library",
   "keywords": [
     "template",
     "project",
     "type"
   ],
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "browser": "./src/index.ts",
+  "unpkg": "./src/index.ts",
+  "jsdelivr": "./src/index.ts",
+  "types": "./src/index.ts",
+  "typings": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts",
+      "browser": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "homepage": "https://github.com/skyclouds2001/sky-types#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skyclouds2001/sky-types.git"
   },
-  "homepage": "https://github.com/skyclouds2001/sky-types#readme",
   "bugs": {
     "url": "https://github.com/skyclouds2001/sky-types/issues",
     "email": "skyclouds2001@163.com"
   },
-  "license": "MIT",
   "author": {
     "name": "skyclouds2001",
     "email": "skyclouds2001@163.com",
@@ -25,7 +47,6 @@
   "contributors": [
     "skyclouds2001"
   ],
-  "main": "src/index.ts",
   "packageManager": "pnpm@8.4.0",
   "engines": {
     "node": ">=18.13.0",
