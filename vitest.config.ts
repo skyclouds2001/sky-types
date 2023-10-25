@@ -2,21 +2,19 @@ import { defineConfig } from 'vitest/config'
 import path from 'node:path'
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      '~': __dirname,
-      '@': path.resolve(__dirname, './src/'),
-    },
-  },
   test: {
     root: '.',
+    include: ['**/?(*.){test,spec}.?(c|m)[jt]s?(x)'],
+    exclude: ['**/node_modules/**', '**/dist/**', '**/.{idea,fleet,vscode,git}/**', '**/{vite,vitest}.config.*'],
     watch: false,
     environment: 'node',
-    include: ['tests/**/*.{test,spec}.{js,jsx,ts,tsx}'],
     reporters: ['default', 'html'],
     coverage: {
       provider: 'v8',
       enabled: true,
+    },
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
     },
     cache: {},
   },
