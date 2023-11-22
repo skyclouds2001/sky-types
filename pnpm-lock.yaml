@@ -453,8 +453,8 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/message@18.4.0:
-    resolution: {integrity: sha512-3kg6NQO6pJ+VdBTWi51KInT8ngkxPJaW+iI7URtUALjKcO9K4XY3gf80ZPmS1hDessrjb7qCr1lau8eWMINAQw==}
+  /@commitlint/message@18.4.3:
+    resolution: {integrity: sha512-ddJ7AztWUIoEMAXoewx45lKEYEOeOlBVWjk8hDMUGpprkuvWULpaXczqdjwVtjrKT3JhhN+gMs8pm5G3vB2how==}
     engines: {node: '>=v18'}
     dev: true
 
@@ -495,7 +495,7 @@ packages:
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/ensure': 18.4.0
-      '@commitlint/message': 18.4.0
+      '@commitlint/message': 18.4.3
       '@commitlint/to-lines': 18.4.0
       '@commitlint/types': 18.4.0
       execa: 5.1.1
