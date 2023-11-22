@@ -390,11 +390,11 @@ packages:
       ajv: 8.12.0
     dev: true
 
-  /@commitlint/ensure@18.4.0:
-    resolution: {integrity: sha512-N5cJo/n61ULSwz3W5Iz/IZJ0I9H/PaHc+OMcF2XcRVbLa6B3YwzEW66XGCRKVULlsBNSrIH6tk5un9ayXAXIdw==}
+  /@commitlint/ensure@18.4.3:
+    resolution: {integrity: sha512-MI4fwD9TWDVn4plF5+7JUyLLbkOdzIRBmVeNlk4dcGlkrVA+/l5GLcpN66q9LkFsFv6G2X31y89ApA3hqnqIFg==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.4.0
+      '@commitlint/types': 18.4.3
       lodash.camelcase: 4.3.0
       lodash.kebabcase: 4.1.1
       lodash.snakecase: 4.1.1
@@ -494,7 +494,7 @@ packages:
     resolution: {integrity: sha512-T3ChRxQZ6g0iNCpVLc6KeQId0/86TnyQA8PFkng+dWElO2DAA5km/yirgKZV1Xlc+gF7Rf6d+a0ottxdKpOY+w==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/ensure': 18.4.0
+      '@commitlint/ensure': 18.4.3
       '@commitlint/message': 18.4.0
       '@commitlint/to-lines': 18.4.0
       '@commitlint/types': 18.4.0
@@ -515,6 +515,13 @@ packages:
 
   /@commitlint/types@18.4.0:
     resolution: {integrity: sha512-MKeaFxt0I9fhqUb2E+YIzX/gZtmkuodJET/XKiZIMvXUff8Ee4Ih86eLg+yAm2jf1pwGBmU02uNOp0y094w2Uw==}
+    engines: {node: '>=v18'}
+    dependencies:
+      chalk: 4.1.2
+    dev: true
+
+  /@commitlint/types@18.4.3:
+    resolution: {integrity: sha512-cvzx+vtY/I2hVBZHCLrpoh+sA0hfuzHwDc+BAFPimYLjJkpHnghQM+z8W/KyLGkygJh3BtI3xXXq+dKjnSWEmA==}
     engines: {node: '>=v18'}
     dependencies:
       chalk: 4.1.2
